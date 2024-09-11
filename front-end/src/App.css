@@ -1,0 +1,56 @@
+/* App.css */
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow-y: auto; /* Ensure the sidebar is scrollable if content overflows */
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 10px; /* Add padding to ensure visibility */
+}
+
+.sidebar input {
+  width: calc(100% - 40px); /* Adjust width to accommodate button */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: inline-block; /* Ensure inline display */
+}
+
+.sidebar button {
+  padding: 8px;
+  margin-left: 5px; /* Space between input and button */
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 5px 0;
+}
+
+.calendar-container {
+  flex: 1;
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
